@@ -1,3 +1,4 @@
+
 var states = [];
 var stateAbbr = "";
 
@@ -14,10 +15,13 @@ function populateCrimeData(event) {
     
 	$.ajax({
 		url: queryURL,
-		method: "GET"
+        method: "GET"
 	}).then(function(response) {
 		console.log(response);
 		
         $("#states").append(response);
     });
 }
+
+
+

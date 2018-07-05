@@ -127,3 +127,15 @@
       a:hover {
         color: darkorange;
       }
+
+
+      #result{
+        height: 50px;
+        width: 50px;
+				border: 1px solid #ccc;
+				padding: 10px;
+				box-shadow: 0 0 10px 0 #bbb;
+				margin-bottom: 10px;
+				font-size: 10px;
+				/* line-height: 25px; */
+			}

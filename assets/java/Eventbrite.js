@@ -1,39 +1,3 @@
-// var data = {
-//   "2018":{
-//     "areas": {
-//       "GB": {
-//           "value": 0,
-//           "tooltip": {
-//               "content": "<span style=\"font-weight:bold;\">United Kingdom</span><br />Events: " + 0
-//           }
-//       },
-//       "US": {
-//           "value": 0,
-//           // "href": "http://en.wikipedia.org/w/index.php?search=United States",
-//           "tooltip": {
-//               "content": "<span style=\"font-weight:bold;\">United States</span><br />Events: " + 0
-//           }
-//       }
-//     },
-//     "plots": {
-//         "london": {
-//             "value": 0,
-//             "tooltip": {
-//                 "content": "<span style=\"font-weight:bold;\">London(test)</span><br />Events: " + 0
-//             }
-//         },
-//         "newyork": {
-//             "value": 0,
-//             "tooltip": {
-//                 "content": "<span style=\"font-weight:bold;\">New-York</span><br />Events: " + 0
-//             }
-//         }
-//     }
-//   }
-  
-// };
-
-
 var plots = {
   "GB": {
       "latitude": 55.3781,
@@ -52,7 +16,16 @@ var plots = {
           "content": "United States"
       },
       "eventCount": 0
-  }
+  },
+  "AU": {
+    "latitude": 37.0902,
+    "longitude": -95.7129,
+    "text": {
+        "position": "left",
+        "content": "Australia"
+    },
+    "eventCount": 0
+}
 };
 
 
@@ -156,8 +129,10 @@ $(document).ready(function(){
 $("#refresh").on("click",function(event){
     event.preventDefault();
     $(".mapcontainer").trigger('update', [{
-      newPlots: plots, 
-      animDuration: 2000
+      newPlots: plots
+      // areas: data[2018]['areas'], 
+      // plots: data[2018]['plots'], 
+      // animDuration: 1000
     }]);
 
     //   Token for an Eventbrite api
@@ -188,10 +163,10 @@ for(var i = 0; i < arrEvents.length; i++)
 {
   var eventbriteLocale = arrEvents[i].locale;
   var countryCode = eventbriteLocale.slice(3, 5);
-  // plots[countryCode].eventCount++;
-  // console.log(plots);
+  plots[countryCode].eventCount++;
+      console.log(plots);
 
-  // console.log("Locale: " + arrEvents[i].locale + " Timezone (start): " + arrEvents[i].start.timezone);
+  console.log("Locale: " + arrEvents[i].locale + " Timezone (start): " + arrEvents[i].start.timezone);
 }
 
 

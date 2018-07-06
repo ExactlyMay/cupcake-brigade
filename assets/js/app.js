@@ -17,6 +17,13 @@ $(document).ready(function(){
         }
     });
 
+    // $(".map").on("mouseover", function() {
+    //     $(".mapTooltip").show();
+    // });
+    // $(".map").on("mouseout", function(){
+    //     $(".mapTooltip").hide();
+    // })
+
 
     // $(function () {
     //     $(".mapcontainer").mapael({

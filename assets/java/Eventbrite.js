@@ -1,20 +1,172 @@
+// var data = {
+//   "2018":{
+//     "areas": {
+//       "GB": {
+//           "value": 0,
+//           "tooltip": {
+//               "content": "<span style=\"font-weight:bold;\">United Kingdom</span><br />Events: " + 0
+//           }
+//       },
+//       "US": {
+//           "value": 0,
+//           // "href": "http://en.wikipedia.org/w/index.php?search=United States",
+//           "tooltip": {
+//               "content": "<span style=\"font-weight:bold;\">United States</span><br />Events: " + 0
+//           }
+//       }
+//     },
+//     "plots": {
+//         "london": {
+//             "value": 0,
+//             "tooltip": {
+//                 "content": "<span style=\"font-weight:bold;\">London(test)</span><br />Events: " + 0
+//             }
+//         },
+//         "newyork": {
+//             "value": 0,
+//             "tooltip": {
+//                 "content": "<span style=\"font-weight:bold;\">New-York</span><br />Events: " + 0
+//             }
+//         }
+//     }
+//   }
+  
+// };
+
+
+var plots = {
+  "GB": {
+      "latitude": 55.3781,
+      "longitude": -3.4360,
+      "text": {
+          "position": "left",
+          "content": "Great Britain"
+      },
+      "eventCount": 0
+  },
+  "US": {
+      "latitude": 37.0902,
+      "longitude": -95.7129,
+      "text": {
+          "position": "left",
+          "content": "United States"
+      },
+      "eventCount": 0
+  }
+};
 
 
 
 
+$(document).ready(function(){
+
+  // Mapael initialisation    
+  $world = $(".container");
+  $world.mapael({
+    map: {
+        name: "world_countries",
+        defaultArea: {
+            attrs: {
+                fill: "#fff",
+                stroke: "#232323",
+                "stroke-width": 0.3
+            }
+        },
+        defaultPlot: {
+            text: {
+                attrs: {
+                    fill: "#b4b4b4",
+                    "font-weight": "normal"
+                },
+                attrsHover: {
+                    fill: "#fff",
+                    "font-weight": "bold"
+                }
+            }
+        }
+        , zoom: {
+            enabled: true
+            , step: 0.25
+            , maxLevel: 20
+        }
+    },
+    legend: {
+        plot: {
+          display: true,
+          title: "Number of Events",
+          marginBottom: 6,
+          slices: [
+              {
+                  type: "circle",
+                  max: 10,
+                  attrs: {
+                      fill: "#FD4851",
+                      "stroke-width": 1
+                  },
+                  attrsHover: {
+                      transform: "s1.5",
+                      "stroke-width": 1
+                  },
+                  label: "Less Than 10",
+                  size: 10
+              },
+              {
+                  type: "circle",
+                  min: 11,
+                  max: 19,
+                  attrs: {
+                      fill: "#FD4851",
+                      "stroke-width": 1
+                  },
+                  attrsHover: {
+                      transform: "s1.5",
+                      "stroke-width": 1
+                  },
+                  label: "Between 11 and 19",
+                  size: 20
+              },
+              {
+                  type: "circle",
+                  min: 100,
+                  attrs: {
+                      fill: "#FD4851",
+                      "stroke-width": 1
+                  },
+                  attrsHover: {
+                      transform: "s1.5",
+                      "stroke-width": 1
+                  },
+                  label: "More Than 20",
+                  size: 30
+              }
+          ]
+      }
+  }
+
+});
+
+  $('.map').on('click', 'path', function() {
+      console.log("$(this).attr('data-id'): " + $(this).attr("data-id"));
+  });
+
+});
 
 
-$("#submitBtn").on("click",function(event){
+
+$("#refresh").on("click",function(event){
     event.preventDefault();
+    $(".mapcontainer").trigger('update', [{
+      newPlots: plots, 
+      animDuration: 2000
+    }]);
+
     //   Token for an Eventbrite api
-var Token = "E37FO4F4OMDF4ELNTCLM";
-var EventName = $("#searchEvents").val().trim();
-console.log(EventName);
-// Here we are building the URL we need to query the database
+    var Token = "E37FO4F4OMDF4ELNTCLM";
+    var EventName = $("#searchEvents").val().trim();
+    console.log(EventName);
+  // Here we are building the URL we need to query the database
 
 var queryURL = "https://www.eventbriteapi.com/v3/events/search/?q="+ EventName +"&token="+ Token ; 
-
-// Here we run our AJAX call to the OpenWeatherMap API
 
 $.ajax({
   url: queryURL,
@@ -25,10 +177,26 @@ $.ajax({
 // We store all of the retrieved data inside of an object called "response"
   .then(function(response) {
 
-    
-
 //     // Log the resulting object
-    console.log(response);
+    // console.log(response);
+
+    var arrEvents = response.events;
+
+// console.log(arrEvents);
+
+for(var i = 0; i < arrEvents.length; i++)
+{
+  var eventbriteLocale = arrEvents[i].locale;
+  var countryCode = eventbriteLocale.slice(3, 5);
+  // plots[countryCode].eventCount++;
+  // console.log(plots);
+
+  // console.log("Locale: " + arrEvents[i].locale + " Timezone (start): " + arrEvents[i].start.timezone);
+}
+
+
+    plotMap();
+
 
     var left = $("<div>");
     var lh1 = $("<h1>");
@@ -87,3 +255,18 @@ $.ajax({
 
 });
 
+
+function plotMap(){
+
+  // Knob initialisation (for selecting a year)
+  // $(".knob").knob({
+  //     release: function (value) {
+  //         $(".world").trigger('update', [{
+  //             mapOptions: data[value],
+  //             animDuration: 300
+  //         }]);
+  //     }
+  // });
+
+//  console.log("In the plotMap function!");
+}

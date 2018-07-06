@@ -156,10 +156,8 @@ $(document).ready(function(){
 $("#refresh").on("click",function(event){
     event.preventDefault();
     $(".mapcontainer").trigger('update', [{
-      newPlots: plots
-      // areas: data[2018]['areas'], 
-      // plots: data[2018]['plots'], 
-      // animDuration: 1000
+      newPlots: plots, 
+      animDuration: 2000
     }]);
 
     //   Token for an Eventbrite api

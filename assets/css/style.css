@@ -1,15 +1,17 @@
 
-    .box{
+    .box, .front{
         margin: 5em auto;
         position: relative;
         width: 500px;
         height: 500px;
-        line-height: 10em;
+        /* line-height: 10em; */
         overflow: hidden;
         background:gray;
+        font-size: 15px;
+        vertical-align: middle;
       } 
       
-      .box__right, .box__left, .box__top, .box__bottom, .box__center {
+      .box__right, .box__left, .box__top, .box__bottom, .box__center,.front {
         position: absolute;
         width: inherit;
         height: inherit;
@@ -153,8 +155,7 @@
     
     .mapael .mapTooltip {
         position : absolute;
-        background-color : #4c4747;
-        moz-opacity:0.70;
+        background-color : #474c4b;
         opacity: 0.70;
         filter:alpha(opacity=70);
         border-radius:10px;
@@ -210,4 +211,7 @@
       margin-bottom: 13px;
 
     }
-    
+    div.hidden
+    {
+        display: none
+    }

@@ -33,6 +33,8 @@
 
     
 
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.1/css/font-awesome.min.css" />
+
     
     
 
@@ -47,6 +49,19 @@
             </div>
             </div>
 
+    <form id="eventForm">
+        <label id="stateInput">Search for a Events:</label> <br>
+        <input type=“text” id="searchEvents"><br>
+      
+
+        <div id="result" class="hidden"></div>
+        <div id="eventid"></div>
+        
+        <button id="speechbtn" ><i class="fa fa-microphone"></i></button>
+
+
+        <button id="submitBtn">Submit</button>
+    </form>
 
 
         <div class="container">
@@ -72,10 +87,11 @@
         <!-- <h1>Direction aware hover pure CSS</h1>
 
   <div class="box">
-    <div class="box__right">Right → Left</div>
-    <div class="box__left">Left → Right</div>
-    <div class="box__top">Top → Bottom</div>
-    <div class="box__bottom">Bottom → Top</div>
+    <div class="front"></div>
+    <div class="box__right"></div>
+    <div class="box__left"></div>
+    <div class="box__top"></div>
+    <div class="box__bottom"></div>
     <div class="box__center">
       Hover from any side  
     </div>

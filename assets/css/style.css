@@ -1,15 +1,17 @@
 
-    .box{
+    .box, .front{
         margin: 5em auto;
         position: relative;
         width: 500px;
         height: 500px;
-        line-height: 10em;
+        /* line-height: 10em; */
         overflow: hidden;
         background:gray;
+        font-size: 15px;
+        vertical-align: middle;
       } 
       
-      .box__right, .box__left, .box__top, .box__bottom, .box__center {
+      .box__right, .box__left, .box__top, .box__bottom, .box__center,.front {
         position: absolute;
         width: inherit;
         height: inherit;
@@ -101,19 +103,21 @@
       
       /* Some boring css*/
       html,
-      body {
-        height: 100%;
-      }
       
+        
+           
+
       body {
-        color: #5d5d5d;
-        font-family: Helvetica, Arial, sans-serif;
+        font-family: 'Eagle Lake', cursive;
+        text-shadow: 2px 2px black;
+        text-align: center; 
+        color: #eccc14ec;
         transform: translateZ(0);
-      }
+      } */
       
-      h1 {
+      h1 { 
         text-align: center;
-        font-size: 30px;
+        font-size: 50px;
         margin: auto;
         margin-top: 50px;
       }
@@ -121,7 +125,7 @@
       footer {
         text-align: center;
         font-size: 8pt;
-        color: gray;
+        color: rgb(16, 13, 170);
       }
       
       a {
@@ -152,7 +156,6 @@
     .mapael .mapTooltip {
         position : absolute;
         background-color : #474c4b;
-        moz-opacity:0.70;
         opacity: 0.70;
         filter:alpha(opacity=70);
         border-radius:10px;
@@ -199,7 +202,16 @@
     /* Then Zoom Out button */
     .mapael .zoomOut {
         top: 50px;
+    } 
+    #eventForm{
+      text-align: center;
+      margin-bottom: 20px;
     }
+    #searchEvents{
+      margin-bottom: 13px;
+
+    }
+
     #eventForm {
         text-align: center;
         margin-bottom: 20px;
@@ -210,3 +222,9 @@
    /* .mapTooltip {
     padding: 2px;
    } */
+
+    div.hidden
+    {
+        display: none
+    }
+

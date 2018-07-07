@@ -17,12 +17,13 @@ $(document).ready(function(){
         }
     });
 
-    // $(".map").on("mouseover", function() {
-    //     $(".mapTooltip").show();
-    // });
-    // $(".map").on("mouseout", function(){
-    //     $(".mapTooltip").hide();
-    // })
+
+//     $(".map").on("mouseover", function() {
+//         $(".mapTooltip").show();
+//     });
+//     $(".map").on("mouseout", function(){
+//         $(".mapTooltip").hide();
+//     })
 
 
     // $(function () {
@@ -134,6 +135,11 @@ $(document).ready(function(){
     //         }
     //     });
     // });
+
+    $('.map').on('click', 'path', function() {
+        console.log("$(this).attr('data-id'): " + $(this).attr("data-id"));
+    });
+
 
 });
 

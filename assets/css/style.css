@@ -255,13 +255,14 @@
    #searchEvents {
        margin-bottom: 13px;
    }
-   /* .mapTooltip {
-    padding: 2px;
-   } */
+   #refresh {
+     color: black;
+   }
 
     div.hidden
     {
         display: none
     }
+   
 
 

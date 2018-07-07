@@ -193,7 +193,7 @@ $.ajax({
   .then(function(response) {
 
 //     // Log the resulting object
-    // console.log(response);
+    console.log(response);
 
     var arrEvents = response.events;
 
@@ -208,9 +208,6 @@ for(var i = 0; i < arrEvents.length; i++)
 
   // console.log("Locale: " + arrEvents[i].locale + " Timezone (start): " + arrEvents[i].start.timezone);
 }
-
-
-    plotMap();
 
 
     var left = $("<div>");

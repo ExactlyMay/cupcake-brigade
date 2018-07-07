@@ -1,15 +1,17 @@
 
-    .box{
+    .box, .front{
         margin: 5em auto;
         position: relative;
         width: 500px;
         height: 500px;
-        line-height: 10em;
+        /* line-height: 10em; */
         overflow: hidden;
         background:gray;
+        font-size: 15px;
+        vertical-align: middle;
       } 
       
-      .box__right, .box__left, .box__top, .box__bottom, .box__center {
+      .box__right, .box__left, .box__top, .box__bottom, .box__center,.front {
         position: absolute;
         width: inherit;
         height: inherit;
@@ -99,7 +101,7 @@
         
       }
       
-      /* Some booring css*/
+      /* Some boring css*/
       html,
       
         
@@ -113,7 +115,32 @@
         color: yellow;
         transform: translateZ(0);
       } 
+
+
+      * {
+        box-sizing: border-box;
+      }
+
       
+      .jumbotron {
+        color:orange;
+        margin-bottom: auto;
+        padding-bottom: 20px;
+        padding-top: 25px;
+        margin-right: 10%;
+        margin-left: 10%;
+        text-align: center;
+        opacity: .6;
+        background-color: #fff;
+        margin: 0 auto;
+      }
+
+      label {
+        color:orange;
+        font-size: 25px;
+        margin-right: 10px;
+      }
+
       h1 { 
         text-align: center;
         font-size: 75px;
@@ -155,8 +182,7 @@
     
     .mapael .mapTooltip {
         position : absolute;
-        background-color : #4c4747;
-        moz-opacity:0.70;
+        background-color : #474c4b;
         opacity: 0.70;
         filter:alpha(opacity=70);
         border-radius:10px;
@@ -214,8 +240,28 @@
       text-align: center;
 
     }
+
     
     #refresh{
       color: black;
       font-family: 'Bangers', cursive;
     }
+
+
+    #eventForm {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+   #searchEvents {
+       margin-bottom: 13px;
+   }
+   /* .mapTooltip {
+    padding: 2px;
+   } */
+
+    div.hidden
+    {
+        display: none
+    }
+
+

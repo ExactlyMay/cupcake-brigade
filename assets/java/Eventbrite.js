@@ -1,7 +1,7 @@
 
 var plots = {
     "AD": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Andorra"
@@ -10,7 +10,7 @@ var plots = {
         "longitude": 1.5
     },
     "AE": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "United Arab Emirates"
@@ -19,7 +19,7 @@ var plots = {
         "longitude": 54
     },
     "AF": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Afghanistan"
@@ -28,7 +28,7 @@ var plots = {
         "longitude": 65
     },
     "AG": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Antigua and Barbuda"
@@ -37,7 +37,7 @@ var plots = {
         "longitude": -61.8
     },
     "AI": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Anguilla"
@@ -46,7 +46,7 @@ var plots = {
         "longitude": -63.17
     },
     "AL": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Albania"
@@ -55,7 +55,7 @@ var plots = {
         "longitude": 20
     },
     "AM": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Armenia"
@@ -64,7 +64,7 @@ var plots = {
         "longitude": 45
     },
     "AN": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Netherlands Antilles"
@@ -73,7 +73,7 @@ var plots = {
         "longitude": -68.75
     },
     "AO": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Angola"
@@ -82,7 +82,7 @@ var plots = {
         "longitude": 18.5
     },
     "AP": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Asia/Pacific Region"
@@ -91,7 +91,7 @@ var plots = {
         "longitude": 105
     },
     "AQ": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Antarctica"
@@ -100,7 +100,7 @@ var plots = {
         "longitude": 0
     },
     "AR": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Argentina"
@@ -109,7 +109,7 @@ var plots = {
         "longitude": -64
     },
     "AS": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "American Samoa"
@@ -118,7 +118,7 @@ var plots = {
         "longitude": -170
     },
     "AT": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Austria"
@@ -127,7 +127,7 @@ var plots = {
         "longitude": 13.33
     },
     "AU": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Australia"
@@ -136,7 +136,7 @@ var plots = {
         "longitude": 133
     },
     "AW": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Aruba"
@@ -145,7 +145,7 @@ var plots = {
         "longitude": -69.97
     },
     "AZ": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Azerbaijan"
@@ -154,7 +154,7 @@ var plots = {
         "longitude": 47.5
     },
     "BA": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Bosnia and Herzegovina"
@@ -163,7 +163,7 @@ var plots = {
         "longitude": 18
     },
     "BB": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Barbados"
@@ -172,7 +172,7 @@ var plots = {
         "longitude": -59.53
     },
     "BD": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Bangladesh"
@@ -181,7 +181,7 @@ var plots = {
         "longitude": 90
     },
     "BE": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Belgium"
@@ -190,7 +190,7 @@ var plots = {
         "longitude": 4
     },
     "BF": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Burkina Faso"
@@ -199,7 +199,7 @@ var plots = {
         "longitude": -2
     },
     "BG": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Bulgaria"
@@ -208,7 +208,7 @@ var plots = {
         "longitude": 25
     },
     "BH": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Bahrain"
@@ -217,7 +217,7 @@ var plots = {
         "longitude": 50.55
     },
     "BI": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Burundi"
@@ -226,7 +226,7 @@ var plots = {
         "longitude": 30
     },
     "BJ": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Benin"
@@ -235,7 +235,7 @@ var plots = {
         "longitude": 2.25
     },
     "BM": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Bermuda"
@@ -244,7 +244,7 @@ var plots = {
         "longitude": -64.75
     },
     "BN": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Brunei Darussalam"
@@ -253,7 +253,7 @@ var plots = {
         "longitude": 114.67
     },
     "BO": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Bolivia"
@@ -262,7 +262,7 @@ var plots = {
         "longitude": -65
     },
     "BR": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Brazil"
@@ -271,7 +271,7 @@ var plots = {
         "longitude": -55
     },
     "BS": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Bahamas"
@@ -280,7 +280,7 @@ var plots = {
         "longitude": -76
     },
     "BT": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Bhutan"
@@ -289,7 +289,7 @@ var plots = {
         "longitude": 90.5
     },
     "BV": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Bouvet Island"
@@ -298,7 +298,7 @@ var plots = {
         "longitude": 3.4
     },
     "BW": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Botswana"
@@ -307,7 +307,7 @@ var plots = {
         "longitude": 24
     },
     "BY": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Belarus"
@@ -316,7 +316,7 @@ var plots = {
         "longitude": 28
     },
     "BZ": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Belize"
@@ -325,7 +325,7 @@ var plots = {
         "longitude": -88.75
     },
     "CA": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Canada"
@@ -334,7 +334,7 @@ var plots = {
         "longitude": -95
     },
     "CC": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Cocos (Keeling) Islands"
@@ -343,7 +343,7 @@ var plots = {
         "longitude": 96.83
     },
     "CD": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Congo, The Democratic Republic of the"
@@ -352,7 +352,7 @@ var plots = {
         "longitude": 25
     },
     "CF": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Central African Republic"
@@ -361,7 +361,7 @@ var plots = {
         "longitude": 21
     },
     "CG": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Congo"
@@ -370,7 +370,7 @@ var plots = {
         "longitude": 15
     },
     "CH": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Switzerland"
@@ -379,7 +379,7 @@ var plots = {
         "longitude": 8
     },
     "CI": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Cote d'Ivoire"
@@ -388,7 +388,7 @@ var plots = {
         "longitude": -5
     },
     "CK": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Cook Islands"
@@ -397,7 +397,7 @@ var plots = {
         "longitude": -159.77
     },
     "CL": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Chile"
@@ -406,7 +406,7 @@ var plots = {
         "longitude": -71
     },
     "CM": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Cameroon"
@@ -415,7 +415,7 @@ var plots = {
         "longitude": 12
     },
     "CN": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "China"
@@ -424,7 +424,7 @@ var plots = {
         "longitude": 105
     },
     "CO": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Colombia"
@@ -433,7 +433,7 @@ var plots = {
         "longitude": -72
     },
     "CR": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Costa Rica"
@@ -442,7 +442,7 @@ var plots = {
         "longitude": -84
     },
     "CU": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Cuba"
@@ -451,7 +451,7 @@ var plots = {
         "longitude": -80
     },
     "CV": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Cape Verde"
@@ -460,7 +460,7 @@ var plots = {
         "longitude": -24
     },
     "CX": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Christmas Island"
@@ -469,7 +469,7 @@ var plots = {
         "longitude": 105.67
     },
     "CY": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Cyprus"
@@ -478,7 +478,7 @@ var plots = {
         "longitude": 33
     },
     "CZ": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Czech Republic"
@@ -487,7 +487,7 @@ var plots = {
         "longitude": 15.5
     },
     "DE": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Germany"
@@ -496,7 +496,7 @@ var plots = {
         "longitude": 9
     },
     "DJ": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Djibouti"
@@ -505,7 +505,7 @@ var plots = {
         "longitude": 43
     },
     "DK": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Denmark"
@@ -514,7 +514,7 @@ var plots = {
         "longitude": 10
     },
     "DM": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Dominica"
@@ -523,7 +523,7 @@ var plots = {
         "longitude": -61.33
     },
     "DO": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Dominican Republic"
@@ -532,7 +532,7 @@ var plots = {
         "longitude": -70.67
     },
     "DZ": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Algeria"
@@ -541,7 +541,7 @@ var plots = {
         "longitude": 3
     },
     "EC": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Ecuador"
@@ -550,7 +550,7 @@ var plots = {
         "longitude": -77.5
     },
     "EE": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Estonia"
@@ -559,7 +559,7 @@ var plots = {
         "longitude": 26
     },
     "EG": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Egypt"
@@ -568,7 +568,7 @@ var plots = {
         "longitude": 30
     },
     "EH": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Western Sahara"
@@ -577,7 +577,7 @@ var plots = {
         "longitude": -13
     },
     "ER": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Eritrea"
@@ -586,7 +586,7 @@ var plots = {
         "longitude": 39
     },
     "ES": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Spain"
@@ -595,7 +595,7 @@ var plots = {
         "longitude": -4
     },
     "ET": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Ethiopia"
@@ -604,7 +604,7 @@ var plots = {
         "longitude": 38
     },
     "EU": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Europe"
@@ -613,7 +613,7 @@ var plots = {
         "longitude": 8
     },
     "FI": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Finland"
@@ -622,7 +622,7 @@ var plots = {
         "longitude": 26
     },
     "FJ": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Fiji"
@@ -631,7 +631,7 @@ var plots = {
         "longitude": 175
     },
     "FK": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Falkland Islands (Malvinas)"
@@ -640,7 +640,7 @@ var plots = {
         "longitude": -59
     },
     "FM": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Micronesia, Federated States of"
@@ -649,7 +649,7 @@ var plots = {
         "longitude": 158.25
     },
     "FO": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Faroe Islands"
@@ -658,7 +658,7 @@ var plots = {
         "longitude": -7
     },
     "FR": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "France"
@@ -667,7 +667,7 @@ var plots = {
         "longitude": 2
     },
     "GA": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Gabon"
@@ -676,7 +676,7 @@ var plots = {
         "longitude": 11.75
     },
     "GB": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "United Kingdom"
@@ -685,7 +685,7 @@ var plots = {
         "longitude": -2
     },
     "GD": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Grenada"
@@ -694,7 +694,7 @@ var plots = {
         "longitude": -61.67
     },
     "GE": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Georgia"
@@ -703,7 +703,7 @@ var plots = {
         "longitude": 43.5
     },
     "GF": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "French Guiana"
@@ -712,7 +712,7 @@ var plots = {
         "longitude": -53
     },
     "GH": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Ghana"
@@ -721,7 +721,7 @@ var plots = {
         "longitude": -2
     },
     "GI": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Gibraltar"
@@ -730,7 +730,7 @@ var plots = {
         "longitude": -5.37
     },
     "GL": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Greenland"
@@ -739,7 +739,7 @@ var plots = {
         "longitude": -40
     },
     "GM": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Gambia"
@@ -748,7 +748,7 @@ var plots = {
         "longitude": -16.57
     },
     "GN": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Guinea"
@@ -757,7 +757,7 @@ var plots = {
         "longitude": -10
     },
     "GP": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Guadeloupe"
@@ -766,7 +766,7 @@ var plots = {
         "longitude": -61.58
     },
     "GQ": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Equatorial Guinea"
@@ -775,7 +775,7 @@ var plots = {
         "longitude": 10
     },
     "GR": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Greece"
@@ -784,7 +784,7 @@ var plots = {
         "longitude": 22
     },
     "GS": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "South Georgia and the South Sandwich Islands"
@@ -793,7 +793,7 @@ var plots = {
         "longitude": -37
     },
     "GT": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Guatemala"
@@ -802,7 +802,7 @@ var plots = {
         "longitude": -90.25
     },
     "GU": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Guam"
@@ -811,7 +811,7 @@ var plots = {
         "longitude": 144.78
     },
     "GW": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Guinea-Bissau"
@@ -820,7 +820,7 @@ var plots = {
         "longitude": -15
     },
     "GY": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Guyana"
@@ -829,7 +829,7 @@ var plots = {
         "longitude": -59
     },
     "HK": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Hong Kong"
@@ -838,7 +838,7 @@ var plots = {
         "longitude": 114.17
     },
     "HM": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Heard Island and McDonald Islands"
@@ -847,7 +847,7 @@ var plots = {
         "longitude": 72.52
     },
     "HN": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Honduras"
@@ -856,7 +856,7 @@ var plots = {
         "longitude": -86.5
     },
     "HR": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Croatia"
@@ -865,7 +865,7 @@ var plots = {
         "longitude": 15.5
     },
     "HT": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Haiti"
@@ -874,7 +874,7 @@ var plots = {
         "longitude": -72.42
     },
     "HU": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Hungary"
@@ -883,7 +883,7 @@ var plots = {
         "longitude": 20
     },
     "ID": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Indonesia"
@@ -892,7 +892,7 @@ var plots = {
         "longitude": 120
     },
     "IE": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Ireland"
@@ -901,7 +901,7 @@ var plots = {
         "longitude": -8
     },
     "IL": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Israel"
@@ -910,7 +910,7 @@ var plots = {
         "longitude": 34.75
     },
     "IN": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "India"
@@ -919,7 +919,7 @@ var plots = {
         "longitude": 77
     },
     "IO": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "British Indian Ocean Territory"
@@ -928,7 +928,7 @@ var plots = {
         "longitude": 71.5
     },
     "IQ": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Iraq"
@@ -937,7 +937,7 @@ var plots = {
         "longitude": 44
     },
     "IR": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Iran, Islamic Republic of"
@@ -946,7 +946,7 @@ var plots = {
         "longitude": 53
     },
     "IS": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Iceland"
@@ -955,7 +955,7 @@ var plots = {
         "longitude": -18
     },
     "IT": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Italy"
@@ -964,7 +964,7 @@ var plots = {
         "longitude": 12.83
     },
     "JM": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Jamaica"
@@ -973,7 +973,7 @@ var plots = {
         "longitude": -77.5
     },
     "JO": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Jordan"
@@ -982,7 +982,7 @@ var plots = {
         "longitude": 36
     },
     "JP": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Japan"
@@ -991,7 +991,7 @@ var plots = {
         "longitude": 138
     },
     "KE": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Kenya"
@@ -1000,7 +1000,7 @@ var plots = {
         "longitude": 38
     },
     "KG": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Kyrgyzstan"
@@ -1009,7 +1009,7 @@ var plots = {
         "longitude": 75
     },
     "KH": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Cambodia"
@@ -1018,7 +1018,7 @@ var plots = {
         "longitude": 105
     },
     "KI": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Kiribati"
@@ -1027,7 +1027,7 @@ var plots = {
         "longitude": 173
     },
     "KM": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Comoros"
@@ -1036,7 +1036,7 @@ var plots = {
         "longitude": 44.25
     },
     "KN": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Saint Kitts and Nevis"
@@ -1045,7 +1045,7 @@ var plots = {
         "longitude": -62.75
     },
     "KP": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Korea, Democratic People's Republic of"
@@ -1054,7 +1054,7 @@ var plots = {
         "longitude": 127
     },
     "KR": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Korea, Republic of"
@@ -1063,7 +1063,7 @@ var plots = {
         "longitude": 127.5
     },
     "KW": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Kuwait"
@@ -1072,7 +1072,7 @@ var plots = {
         "longitude": 47.66
     },
     "KY": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Cayman Islands"
@@ -1081,7 +1081,7 @@ var plots = {
         "longitude": -80.5
     },
     "KZ": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Kazakhstan"
@@ -1090,7 +1090,7 @@ var plots = {
         "longitude": 68
     },
     "LA": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Lao People's Democratic Republic"
@@ -1099,7 +1099,7 @@ var plots = {
         "longitude": 105
     },
     "LB": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Lebanon"
@@ -1108,7 +1108,7 @@ var plots = {
         "longitude": 35.83
     },
     "LC": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Saint Lucia"
@@ -1117,7 +1117,7 @@ var plots = {
         "longitude": -61.13
     },
     "LI": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Liechtenstein"
@@ -1126,7 +1126,7 @@ var plots = {
         "longitude": 9.53
     },
     "LK": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Sri Lanka"
@@ -1135,7 +1135,7 @@ var plots = {
         "longitude": 81
     },
     "LR": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Liberia"
@@ -1144,7 +1144,7 @@ var plots = {
         "longitude": -9.5
     },
     "LS": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Lesotho"
@@ -1153,7 +1153,7 @@ var plots = {
         "longitude": 28.5
     },
     "LT": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Lithuania"
@@ -1162,7 +1162,7 @@ var plots = {
         "longitude": 24
     },
     "LU": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Luxembourg"
@@ -1171,7 +1171,7 @@ var plots = {
         "longitude": 6.17
     },
     "LV": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Latvia"
@@ -1180,7 +1180,7 @@ var plots = {
         "longitude": 25
     },
     "LY": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Libyan Arab Jamahiriya"
@@ -1189,7 +1189,7 @@ var plots = {
         "longitude": 17
     },
     "MA": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Morocco"
@@ -1198,7 +1198,7 @@ var plots = {
         "longitude": -5
     },
     "MC": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Monaco"
@@ -1207,7 +1207,7 @@ var plots = {
         "longitude": 7.4
     },
     "MD": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Moldova, Republic of"
@@ -1216,7 +1216,7 @@ var plots = {
         "longitude": 29
     },
     "ME": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Montenegro"
@@ -1225,7 +1225,7 @@ var plots = {
         "longitude": 19
     },
     "MG": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Madagascar"
@@ -1234,7 +1234,7 @@ var plots = {
         "longitude": 47
     },
     "MH": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Marshall Islands"
@@ -1243,7 +1243,7 @@ var plots = {
         "longitude": 168
     },
     "MK": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Macedonia"
@@ -1252,7 +1252,7 @@ var plots = {
         "longitude": 22
     },
     "ML": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Mali"
@@ -1261,7 +1261,7 @@ var plots = {
         "longitude": -4
     },
     "MM": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Myanmar"
@@ -1270,7 +1270,7 @@ var plots = {
         "longitude": 98
     },
     "MN": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Mongolia"
@@ -1279,7 +1279,7 @@ var plots = {
         "longitude": 105
     },
     "MO": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Macao"
@@ -1288,7 +1288,7 @@ var plots = {
         "longitude": 113.55
     },
     "MP": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Northern Mariana Islands"
@@ -1297,7 +1297,7 @@ var plots = {
         "longitude": 145.75
     },
     "MQ": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Martinique"
@@ -1306,7 +1306,7 @@ var plots = {
         "longitude": -61
     },
     "MR": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Mauritania"
@@ -1315,7 +1315,7 @@ var plots = {
         "longitude": -12
     },
     "MS": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Montserrat"
@@ -1324,7 +1324,7 @@ var plots = {
         "longitude": -62.2
     },
     "MT": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Malta"
@@ -1333,7 +1333,7 @@ var plots = {
         "longitude": 14.58
     },
     "MU": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Mauritius"
@@ -1342,7 +1342,7 @@ var plots = {
         "longitude": 57.55
     },
     "MV": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Maldives"
@@ -1351,7 +1351,7 @@ var plots = {
         "longitude": 73
     },
     "MW": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Malawi"
@@ -1360,7 +1360,7 @@ var plots = {
         "longitude": 34
     },
     "MX": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Mexico"
@@ -1369,7 +1369,7 @@ var plots = {
         "longitude": -102
     },
     "MY": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Malaysia"
@@ -1378,7 +1378,7 @@ var plots = {
         "longitude": 112.5
     },
     "MZ": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Mozambique"
@@ -1387,7 +1387,7 @@ var plots = {
         "longitude": 35
     },
     "NA": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Namibia"
@@ -1396,7 +1396,7 @@ var plots = {
         "longitude": 17
     },
     "NC": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "New Caledonia"
@@ -1405,7 +1405,7 @@ var plots = {
         "longitude": 165.5
     },
     "NE": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Niger"
@@ -1414,7 +1414,7 @@ var plots = {
         "longitude": 8
     },
     "NF": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Norfolk Island"
@@ -1423,7 +1423,7 @@ var plots = {
         "longitude": 167.95
     },
     "NG": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Nigeria"
@@ -1432,7 +1432,7 @@ var plots = {
         "longitude": 8
     },
     "NI": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Nicaragua"
@@ -1441,7 +1441,7 @@ var plots = {
         "longitude": -85
     },
     "NL": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Netherlands"
@@ -1450,7 +1450,7 @@ var plots = {
         "longitude": 5.75
     },
     "NO": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Norway"
@@ -1459,7 +1459,7 @@ var plots = {
         "longitude": 10
     },
     "NP": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Nepal"
@@ -1468,7 +1468,7 @@ var plots = {
         "longitude": 84
     },
     "NR": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Nauru"
@@ -1477,7 +1477,7 @@ var plots = {
         "longitude": 166.92
     },
     "NU": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Niue"
@@ -1486,7 +1486,7 @@ var plots = {
         "longitude": -169.87
     },
     "NZ": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "New Zealand"
@@ -1495,7 +1495,7 @@ var plots = {
         "longitude": 174
     },
     "OM": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Oman"
@@ -1504,7 +1504,7 @@ var plots = {
         "longitude": 57
     },
     "PA": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Panama"
@@ -1513,7 +1513,7 @@ var plots = {
         "longitude": -80
     },
     "PE": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Peru"
@@ -1522,7 +1522,7 @@ var plots = {
         "longitude": -76
     },
     "PF": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "French Polynesia"
@@ -1531,7 +1531,7 @@ var plots = {
         "longitude": -140
     },
     "PG": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Papua New Guinea"
@@ -1540,7 +1540,7 @@ var plots = {
         "longitude": 147
     },
     "PH": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Philippines"
@@ -1549,7 +1549,7 @@ var plots = {
         "longitude": 122
     },
     "PK": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Pakistan"
@@ -1558,7 +1558,7 @@ var plots = {
         "longitude": 70
     },
     "PL": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Poland"
@@ -1567,7 +1567,7 @@ var plots = {
         "longitude": 20
     },
     "PM": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Saint Pierre and Miquelon"
@@ -1576,7 +1576,7 @@ var plots = {
         "longitude": -56.33
     },
     "PR": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Puerto Rico"
@@ -1585,7 +1585,7 @@ var plots = {
         "longitude": -66.5
     },
     "PS": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Palestinian Territory"
@@ -1594,7 +1594,7 @@ var plots = {
         "longitude": 35.25
     },
     "PT": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Portugal"
@@ -1603,7 +1603,7 @@ var plots = {
         "longitude": -8
     },
     "PW": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Palau"
@@ -1612,7 +1612,7 @@ var plots = {
         "longitude": 134.5
     },
     "PY": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Paraguay"
@@ -1621,7 +1621,7 @@ var plots = {
         "longitude": -58
     },
     "QA": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Qatar"
@@ -1630,7 +1630,7 @@ var plots = {
         "longitude": 51.25
     },
     "RE": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Reunion"
@@ -1639,7 +1639,7 @@ var plots = {
         "longitude": 55.6
     },
     "RO": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Romania"
@@ -1648,7 +1648,7 @@ var plots = {
         "longitude": 25
     },
     "RS": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Serbia"
@@ -1657,7 +1657,7 @@ var plots = {
         "longitude": 21
     },
     "RU": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Russian Federation"
@@ -1666,7 +1666,7 @@ var plots = {
         "longitude": 100
     },
     "RW": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Rwanda"
@@ -1675,7 +1675,7 @@ var plots = {
         "longitude": 30
     },
     "SA": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Saudi Arabia"
@@ -1684,7 +1684,7 @@ var plots = {
         "longitude": 45
     },
     "SB": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Solomon Islands"
@@ -1693,7 +1693,7 @@ var plots = {
         "longitude": 159
     },
     "SC": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Seychelles"
@@ -1702,7 +1702,7 @@ var plots = {
         "longitude": 55.67
     },
     "SD": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Sudan"
@@ -1711,7 +1711,7 @@ var plots = {
         "longitude": 30
     },
     "SE": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Sweden"
@@ -1720,7 +1720,7 @@ var plots = {
         "longitude": 15
     },
     "SG": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Singapore"
@@ -1729,7 +1729,7 @@ var plots = {
         "longitude": 103.8
     },
     "SH": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Saint Helena"
@@ -1738,7 +1738,7 @@ var plots = {
         "longitude": -5.7
     },
     "SI": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Slovenia"
@@ -1747,7 +1747,7 @@ var plots = {
         "longitude": 15
     },
     "SJ": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Svalbard and Jan Mayen"
@@ -1756,7 +1756,7 @@ var plots = {
         "longitude": 20
     },
     "SK": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Slovakia"
@@ -1765,7 +1765,7 @@ var plots = {
         "longitude": 19.5
     },
     "SL": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Sierra Leone"
@@ -1774,7 +1774,7 @@ var plots = {
         "longitude": -11.5
     },
     "SM": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "San Marino"
@@ -1783,7 +1783,7 @@ var plots = {
         "longitude": 12.42
     },
     "SN": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Senegal"
@@ -1792,7 +1792,7 @@ var plots = {
         "longitude": -14
     },
     "SO": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Somalia"
@@ -1801,7 +1801,7 @@ var plots = {
         "longitude": 49
     },
     "SR": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Suriname"
@@ -1810,7 +1810,7 @@ var plots = {
         "longitude": -56
     },
     "ST": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Sao Tome and Principe"
@@ -1819,7 +1819,7 @@ var plots = {
         "longitude": 7
     },
     "SV": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "El Salvador"
@@ -1828,7 +1828,7 @@ var plots = {
         "longitude": -88.92
     },
     "SY": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Syrian Arab Republic"
@@ -1837,7 +1837,7 @@ var plots = {
         "longitude": 38
     },
     "SZ": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Swaziland"
@@ -1846,7 +1846,7 @@ var plots = {
         "longitude": 31.5
     },
     "TC": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Turks and Caicos Islands"
@@ -1855,7 +1855,7 @@ var plots = {
         "longitude": -71.58
     },
     "TD": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Chad"
@@ -1864,7 +1864,7 @@ var plots = {
         "longitude": 19
     },
     "TF": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "French Southern Territories"
@@ -1873,7 +1873,7 @@ var plots = {
         "longitude": 67
     },
     "TG": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Togo"
@@ -1882,7 +1882,7 @@ var plots = {
         "longitude": 1.17
     },
     "TH": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Thailand"
@@ -1891,7 +1891,7 @@ var plots = {
         "longitude": 100
     },
     "TJ": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Tajikistan"
@@ -1900,7 +1900,7 @@ var plots = {
         "longitude": 71
     },
     "TK": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Tokelau"
@@ -1909,7 +1909,7 @@ var plots = {
         "longitude": -172
     },
     "TM": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Turkmenistan"
@@ -1918,7 +1918,7 @@ var plots = {
         "longitude": 60
     },
     "TN": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Tunisia"
@@ -1927,7 +1927,7 @@ var plots = {
         "longitude": 9
     },
     "TO": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Tonga"
@@ -1936,7 +1936,7 @@ var plots = {
         "longitude": -175
     },
     "TR": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Turkey"
@@ -1945,7 +1945,7 @@ var plots = {
         "longitude": 35
     },
     "TT": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Trinidad and Tobago"
@@ -1954,7 +1954,7 @@ var plots = {
         "longitude": -61
     },
     "TV": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Tuvalu"
@@ -1963,7 +1963,7 @@ var plots = {
         "longitude": 178
     },
     "TW": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Taiwan"
@@ -1972,7 +1972,7 @@ var plots = {
         "longitude": 121
     },
     "TZ": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Tanzania, United Republic of"
@@ -1981,7 +1981,7 @@ var plots = {
         "longitude": 35
     },
     "UA": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Ukraine"
@@ -1990,7 +1990,7 @@ var plots = {
         "longitude": 32
     },
     "UG": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Uganda"
@@ -1999,7 +1999,7 @@ var plots = {
         "longitude": 32
     },
     "UM": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "United States Minor Outlying Islands"
@@ -2008,7 +2008,7 @@ var plots = {
         "longitude": 166.6
     },
     "US": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "United States"
@@ -2017,7 +2017,7 @@ var plots = {
         "longitude": -97
     },
     "UY": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Uruguay"
@@ -2026,7 +2026,7 @@ var plots = {
         "longitude": -56
     },
     "UZ": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Uzbekistan"
@@ -2035,7 +2035,7 @@ var plots = {
         "longitude": 64
     },
     "VA": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Holy See (Vatican City State)"
@@ -2044,7 +2044,7 @@ var plots = {
         "longitude": 12.45
     },
     "VC": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Saint Vincent and the Grenadines"
@@ -2053,7 +2053,7 @@ var plots = {
         "longitude": -61.2
     },
     "VE": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Venezuela"
@@ -2062,7 +2062,7 @@ var plots = {
         "longitude": -66
     },
     "VG": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Virgin Islands, British"
@@ -2071,7 +2071,7 @@ var plots = {
         "longitude": -64.5
     },
     "VI": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Virgin Islands, U.S."
@@ -2080,7 +2080,7 @@ var plots = {
         "longitude": -64.83
     },
     "VN": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Vietnam"
@@ -2089,7 +2089,7 @@ var plots = {
         "longitude": 106
     },
     "VU": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Vanuatu"
@@ -2098,7 +2098,7 @@ var plots = {
         "longitude": 167
     },
     "WF": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Wallis and Futuna"
@@ -2107,7 +2107,7 @@ var plots = {
         "longitude": -176.2
     },
     "WS": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Samoa"
@@ -2116,7 +2116,7 @@ var plots = {
         "longitude": -172.33
     },
     "YE": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Yemen"
@@ -2125,7 +2125,7 @@ var plots = {
         "longitude": 48
     },
     "YT": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Mayotte"
@@ -2134,7 +2134,7 @@ var plots = {
         "longitude": 45.17
     },
     "ZA": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "South Africa"
@@ -2143,7 +2143,7 @@ var plots = {
         "longitude": 24
     },
     "ZM": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Zambia"
@@ -2152,7 +2152,7 @@ var plots = {
         "longitude": 30
     },
     "ZW": {
-        "eventCount": 0,
+        "value": 0,
         "text": {
             "position": "left",
             "content": "Zimbabwe"
@@ -2162,7 +2162,6 @@ var plots = {
     }
 };
 
-var displayPlots = {};
 
 $(document).ready(function(){
 
@@ -2261,6 +2260,10 @@ $(document).ready(function(){
 
 $("#submitBtn").on("click",function(event){
     event.preventDefault();
+    var displayPlots = {};
+    displayPlots.clear();
+
+    // for (var element in displayPlots) delete displayPlots[element];
 
 
     $(".box__left").text("");
@@ -2283,7 +2286,7 @@ setTimeout( function(){
         animDuration: 2000
       }])
   }
-, 5000);
+, 2000);
 
 
 var queryURL = "https://www.eventbriteapi.com/v3/events/search/?q="+ EventName +"&token="+ Token ; 
@@ -2300,26 +2303,21 @@ $.ajax({
     // console.log(response);
 
     var arrEvents = response.events;
-
-console.log(arrEvents);
+    // console.log(arrEvents);
 
 for(var i = 0; i < arrEvents.length; i++)
 {
   var eventbriteLocale = arrEvents[i].locale;
   var countryCode = eventbriteLocale.slice(3, 5);
-  plots[countryCode].eventCount++;
+  plots[countryCode].value++;
 
-  if ( plots[countryCode].eventCount > 1){
-      displayPlots[countryCode] = plots[countryCode];
+  if ( plots[countryCode].value > 1){
+    displayPlots[countryCode] = plots[countryCode];
   }
 
   // console.log("Locale: " + arrEvents[i].locale + " Timezone (start): " + arrEvents[i].start.timezone);
 }
-console.log(displayPlots);
-console.log(plots)
-
-
-
+    console.log(displayPlots)
 
     var left = $("<div>");
     var lh1 = $("<h1>");

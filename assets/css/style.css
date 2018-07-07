@@ -101,7 +101,7 @@
         
       }
       
-      /* Some booring css*/
+      /* Some boring css*/
       html,
       
         
@@ -211,7 +211,20 @@
       margin-bottom: 13px;
 
     }
+
+    #eventForm {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+   #searchEvents {
+       margin-bottom: 13px;
+   }
+   /* .mapTooltip {
+    padding: 2px;
+   } */
+
     div.hidden
     {
         display: none
     }
+

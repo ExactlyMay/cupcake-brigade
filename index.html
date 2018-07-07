@@ -29,7 +29,14 @@
     <script src="assets/js/maps/usa_states.min.js" charset="utf-8"></script>
     <script src="assets/js/maps/world_countries.js" charset="utf-8"></script>
     <script src="assets/js/maps/world_countries.min.js" charset="utf-8"></script>
+
+    <script src="assets/js/app.js"></script>
+    <link rel="icon" 
+      type="image/png" 
+      href="http://trickbn.com/wp-content/uploads/2017/12/world-031-768x768.jpg">
+
     <!-- <script src="assets/js/app.js"></script> -->
+
 
     
 
@@ -50,7 +57,7 @@
             </div>
 
     <form id="eventForm">
-        <label id="stateInput">Search for a Events:</label> <br>
+        <label id="stateInput">Search for Events (Movies, Sports, Concerts, Crimes, Charity Events, etc.):</label> <br>
         <input type=“text” id="searchEvents"><br>
       
 
@@ -67,12 +74,16 @@
         <div class="container">
 
             <div class="mapcontainer">
+
+                <!-- <div class="mapTooltip">Hello hello</div> -->
+
                 <form id="eventForm">
                         <label id="stateInput">Search for a Events:</label> <br>
                         <input type=“text” id="searchEvents"><br>
                         
                         <input type="button" value="Update elements" id="refresh"/>
                 </form>
+
 
                 <div class="map">
                     <span>Alternative content for the map</span>

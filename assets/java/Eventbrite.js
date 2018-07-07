@@ -153,7 +153,7 @@ $(document).ready(function(){
 
 
 
-$("#refresh").on("click",function(event){
+$("#submitBtn").on("click",function(event){
     event.preventDefault();
     $(".mapcontainer").trigger('update', [{
       newPlots: plots, 

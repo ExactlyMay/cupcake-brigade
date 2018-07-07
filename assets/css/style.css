@@ -114,9 +114,12 @@
         color: #eccc14ec;
         transform: translateZ(0);
       } 
+
+
       * {
         box-sizing: border-box;
       }
+
       
       .jumbotron {
         color:orange;
@@ -241,12 +244,13 @@
    #searchEvents {
        margin-bottom: 13px;
    }
-   /* .mapTooltip {
-    padding: 2px;
-   } */
+   #refresh {
+     color: black;
+   }
 
     div.hidden
     {
         display: none
     }
+   
 

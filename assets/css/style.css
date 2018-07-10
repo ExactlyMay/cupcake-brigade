@@ -101,26 +101,53 @@
         
       }
       
-      /* Some booring css*/
+      /* Some boring css*/
       html,
       
         
            
 
       body {
-        font-family: 'Eagle Lake', cursive;
+        font-family: 'Monoton', cursive; 
+        font-size: 20px;
         text-shadow: 2px 2px black;
         text-align: center; 
-        color: #eccc14ec;
+        color: yellow;
         transform: translateZ(0);
-      } */
+      } 
+
+
+      * {
+        box-sizing: border-box;
+      }
+
       
+      .jumbotron {
+        color:orange;
+        margin-bottom: auto;
+        padding-bottom: 20px;
+        padding-top: 25px;
+        margin-right: 10%;
+        margin-left: 10%;
+        text-align: center;
+        opacity: .6;
+        background-color: #fff;
+        margin: 0 auto;
+      }
+
+      label {
+        color:orange;
+        font-size: 25px;
+        margin-right: 10px;
+      }
+
       h1 { 
         text-align: center;
-        font-size: 50px;
+        font-size: 75px;
         margin: auto;
         margin-top: 50px;
       }
+      
       
       footer {
         text-align: center;
@@ -204,14 +231,38 @@
         top: 50px;
     } 
     #eventForm{
+      margin-top: 30px;
       text-align: center;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
     }
     #searchEvents{
-      margin-bottom: 13px;
+      margin-bottom: 25px;
+      text-align: center;
 
     }
+
+    
+    #refresh{
+      color: black;
+      font-family: 'Bangers', cursive;
+    }
+
+
+    #eventForm {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+   #searchEvents {
+       margin-bottom: 13px;
+   }
+   #refresh {
+     color: black;
+   }
+
     div.hidden
     {
         display: none
     }
+   
+
+

@@ -1,27 +1,37 @@
-var intervalId;
-var time;
-var correctCounter = 0;
-var incorrectCounter = 0;
-var unansweredCounter = 0;
-var questionCounter = 0;
-var correctAnswer;
-var correctImage;
+//Firebase
+var config = {
+    apiKey: "AIzaSyCn4XC2OW3MeQMqQ8mGhgG0AL1ncDmjGOY",
+    authDomain: "cupcake-brigade.firebaseapp.com",
+    databaseURL: "https://cupcake-brigade.firebaseio.com",
+    projectId: "cupcake-brigade",
+    storageBucket: "cupcake-brigade.appspot.com",
+    messagingSenderId: "1092615531812"
+  };
+  firebase.initializeApp(config);
+  var database = firebase.database();
 
 
 
 $(document).ready(function(){
 
-    $(".container").mapael({
-        map : {
-            name : "world_countries"
-        }
-    });
-
-    $('.map').on('click', 'path', function() {
-        console.log("$(this).attr('data-id'): " + $(this).attr("data-id"));
-    });
+login;
 
 });
 
+function login(){
+    function newLogin(user){
+        if (user)
+        {
+            testAlert(user);
+        } else {
+            var provider = new firebase.auth.GoogleAuthProvider();
+            firebase.auth().signInWithRedirect(provider);
+        }
+    }
 
+    firebase.auth().onAuthStateChanged(newLogin);
+}
 
+function testAlert(user){
+    alert("hello " + user);
+}

@@ -2162,6 +2162,24 @@ var plots = {
     }
 };
 
+var displayPlots = {};
+
+
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCn4XC2OW3MeQMqQ8mGhgG0AL1ncDmjGOY",
+    authDomain: "cupcake-brigade.firebaseapp.com",
+    databaseURL: "https://cupcake-brigade.firebaseio.com",
+    projectId: "cupcake-brigade",
+    storageBucket: "cupcake-brigade.appspot.com",
+    messagingSenderId: "1092615531812"
+  };
+  firebase.initializeApp(config);
+  var database = firebase.database();
+
+  var provider = new firebase.auth.GoogleAuthProvider();
+
+
 
 $(document).ready(function(){
 
@@ -2250,6 +2268,8 @@ $(document).ready(function(){
 
 });
 
+$('#loginBtn').on('click', onSignIn);
+
   $('.map').on('click', 'path', function() {
       console.log("$(this).attr('data-id'): " + $(this).attr("data-id"));
   });
@@ -2258,10 +2278,26 @@ $(document).ready(function(){
 
 
 
+function onSignIn(googleUser) {
+    var profile = googleUser.getBasicProfile();
+    console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+    console.log('Name: ' + profile.getName());
+    console.log('Image URL: ' + profile.getImageUrl());
+    console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+  }
+
+  function signOut() {
+    var auth2 = gapi.auth2.getAuthInstance();
+    auth2.signOut().then(function () {
+      console.log('User signed out.');
+    });
+  }
+
+
+
 $("#submitBtn").on("click",function(event){
     event.preventDefault();
-    var displayPlots = {};
-    displayPlots.clear();
+    // displayPlots.clear();
 
     // for (var element in displayPlots) delete displayPlots[element];
 
@@ -2275,6 +2311,11 @@ $("#submitBtn").on("click",function(event){
     //   Token for an Eventbrite api
 var Token = "E37FO4F4OMDF4ELNTCLM";
 var EventName = $("#searchEvents").val().trim();
+
+database.ref('trains').push({
+    EventName: EventName,
+    dateAdded: firebase.database.ServerValue.TIMESTAMP
+});
 // console.log(EventName);
 // Here we are building the URL we need to query the database
 // AIzaSyA8cKuGcg8_ZyxrmARMBgXbx8gXKGKSans api key for an street view..
@@ -2300,10 +2341,8 @@ $.ajax({
 // We store all of the retrieved data inside of an object called "response"
   .then(function(response) {
     // Log the resulting object
-    // console.log(response);
 
     var arrEvents = response.events;
-    // console.log(arrEvents);
 
 for(var i = 0; i < arrEvents.length; i++)
 {

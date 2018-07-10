@@ -22,6 +22,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js" charset="utf-8"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js" charset="utf-8"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
 
     <script src="assets/js/jquery.mapael.js" charset="utf-8"></script>
     <script src="assets/js/jquery.mapael.min.js" charset="utf-8"></script>
@@ -29,6 +32,9 @@
     <script src="assets/js/maps/usa_states.min.js" charset="utf-8"></script>
     <script src="assets/js/maps/world_countries.js" charset="utf-8"></script>
     <script src="assets/js/maps/world_countries.min.js" charset="utf-8"></script>
+
+    <meta name="google-signin-client_id" content="1092615531812-qqv109e2kguqni1dpelrh2m6iil02pcp.apps.googleusercontent.com">
+
 
     <script src="assets/js/app.js"></script>
     <!-- <link rel="icon" type="image/png" href="http://trickbn.com/wp-content/uploads/2017/12/world-031-768x768.jpg"> -->
@@ -42,8 +48,10 @@
      
         
            
-             
-                <h1 center>World Events</h1>
+    <div id="loginBtn" class="g-signin2" data-onsuccess="onSignIn"></div>
+    <a href="#" onclick="signOut();">Sign out</a>
+
+    <h1 center>World Events</h1>
                 
             </div>
             </div>

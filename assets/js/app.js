@@ -14,7 +14,7 @@ var config = {
 
 $(document).ready(function(){
 
-login;
+login();
 
 });
 

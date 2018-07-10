@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>World Events</title>
+    <title>World Events</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet"  href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
-  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
 
     <!-- <link href="https://fonts.googleapis.com/css?family=Chela+One" rel="stylesheet"> -->
-    
-    
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
     </script>
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js" charset="utf-8"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js" charset="utf-8"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -36,67 +38,157 @@
     <link rel="icon" type="image/png" href="assets/images/icons8-globe-48.png">
     <!-- <script src="assets/js/app.js"></script> -->
 
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.1/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.1/css/font-awesome.min.css"
+    />
 
-  <body style = "background: url(Assets/images/fun.jpg); background-repeat: no-repeat; background-attachment: fixed; background-size: 100% 100%" >
-     
-        
-           
-             
-                <h1 center>World Events</h1>
-                
-            </div>
-            </div>
+    <!-- <body style = "background: url(Assets/images/fun.jpg); background-repeat: no-repeat; background-attachment: fixed; background-size: 100% 100%" > -->
 
-    <form id="eventForm">
-        <label id="stateInput">Search for Events (Movies, Sports, Concerts, Crimes, Charity Events, etc.):</label> <br>
-        <input type=“text” id="searchEvents"><br>
-      
+    <body style="background: black;">
 
-        <div id="result" class="hidden"></div>
-        <div id="eventid"></div>
-        
-        <button id="speechbtn" ><i class="fa fa-microphone"></i></button>
-
-
-        <button id="submitBtn">Submit</button>
-    </form>
-
+            <div class="curl"></div>
+            <!-- <div class="curl2"></div> -->
 
         <div class="container">
+                    <div class="row">
+                            <div class="col-lg-12">
+                                <!-- <marquee></marquee> -->
+                                <!-- <MARQUEE behavior="scroll" direction="left" width="100%" scrollamount="15"></MARQUEE> -->
+                                <h1 class="heading">World Events</h1>
+                            </div>
+                        </div>
+            <div class="row ">
+                <div class="col-md-12">
+                    <div id="myCarousel" class="carousel slide slider1" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>
 
-            <div class="mapcontainer">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="assets/images/new1.jpg" alt="Los Angeles">
+                            </div>
 
-                <!-- <div class="mapTooltip">Hello hello</div> -->
+                            <div class="item">
+                                <img src="assets/images/new2.jpg" alt="Chicago">
+                            </div>
 
-               
+                            <div class="item">
+                                <img src="assets/images/new3.jpg" alt="New York">
+                            </div>
+                        </div>
 
-
-                <div class="map">
-                    <span>Alternative content for the map</span>
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
                 </div>
-                <div class="areaLegend"></div>
-                <div class="plotLegend"></div>
+
             </div>
-        
+
+            <div id="snackbar"> Welcome To World Events </div>
+           <br>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <form id="eventForm">
+                        <label id="stateInput" class="instruction">Search for Events (Movies, Sports, Concerts, Crimes, Charity Events, etc.):</label>
+                        <br>
+                        <input type=“text” id="searchEvents" class="searchTextbox">
+                        <br>
+
+
+                        <div id="result" class="hidden"></div>
+                        <div id="eventid"></div>
+
+
+
+
+                        <!-- <button type="button"  class="btn btn-outline-warning">Warning</button> -->
+                        <button type="button" id="submitBtn" class="btn btn-primary btn-lg">Search</button>
+                        <button id="speechbtn" class="searchbtn">
+                            <i class="fa fa-microphone micro"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+
+
+            <div class="row">
+
+
+                <div class="col-md-12">
+                    <div class="container mpavis">
+
+                        <div class="mapcontainer">
+                            <div class="map">
+                                <span>Alternative content for the map</span>
+                            </div>
+                            <div class="areaLegend"></div>
+                            <div class="plotLegend center"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <br>
+            <!-- <h1>Direction aware hover pure CSS</h1> -->
+
+            
+            <!-- <div class="box">
+                                <div class="front"></div>
+                                <div class="box__right"></div>
+                                <div class="box__left"></div>
+                                <div class="box__top"></div>
+                                <div class="box__bottom"></div>
+                                <div class="box__center">
+                                Hover from any side  
+                                </div>
+                            </div> -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="container">
+                        <!-- <table id="Eventslist">
+
+                            <tr>
+                                <th>Event Name</th>
+                                <th>Location</th>
+                                <th>City</th>
+                                <th>Link To Buy Tickets</th>
+                                <th>Start Time</th>
+                            </tr>
+
+                        </table> -->
+                        <table class="table table-hover" id="Eventslist">
+                            <tr>
+                                <th scope="col">Event Name</th>
+                                <th scope="col">Location</th>
+                                <th scope="col">City</th>
+                                <th scope="col">Buy Tickets From Here</th>
+                                <th scope="col">Starting Time</th>
+                            </tr>
+                        </table>
+                        <button id="clearresult" type="button" class="btn btn-info">Clear</button>
+
+                    </div>
+                </div>
+            </div>
+
+
         </div>
-
-
-         <!-- <h1>Direction aware hover pure CSS</h1> -->
-
-  <div class="box">
-    <div class="front"></div>
-    <div class="box__right"></div>
-    <div class="box__left"></div>
-    <div class="box__top"></div>
-    <div class="box__bottom"></div>
-    <div class="box__center">
-      Hover from any side  
-    </div>
-  </div>
-
         <script src="assets/java/Eventbrite.js">
         </script>
-</body>
+    </body>
 
 </html>

@@ -33,5 +33,5 @@ function login(){
 }
 
 function testAlert(user){
-    alert("hello " + user);
+    console.log("hello " + user.displayName);
 }

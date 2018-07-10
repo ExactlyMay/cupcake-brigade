@@ -33,5 +33,7 @@ function login(){
 }
 
 function testAlert(user){
+    alert("Welcome, " + user.displayName + "!");
+
     console.log("hello " + user.displayName);
 }

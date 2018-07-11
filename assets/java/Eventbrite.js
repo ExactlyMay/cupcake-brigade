@@ -1,4 +1,7 @@
 
+
+
+
 var plots = {
     "AD": {
         "eventCount": 0,
@@ -2164,288 +2167,268 @@ var plots = {
 
 var displayPlots = {};
 
-$(document).ready(function(){
-
-  // Mapael initialisation    
-  $world = $(".container");
-  $world.mapael({
-    map: {
-        name: "world_countries",
-        defaultArea: {
-            attrs: {
-                fill: "#fff",
-                stroke: "#232323",
-                "stroke-width": 0.3
-            }
-        },
-        defaultPlot: {
-            text: {
+$(document).ready(function () {
+    $("#Eventslist").hide();
+    $("#clearresult").hide();
+      
+    $world = $(".container");
+    $world.mapael({
+        map: {
+            name: "world_countries",
+            defaultArea: {
                 attrs: {
-                    fill: "#b4b4b4",
-                    "font-weight": "normal"
-                },
-                attrsHover: {
                     fill: "#fff",
-                    "font-weight": "bold"
+                    stroke: "#232323",
+                    "stroke-width": 0.3
+                }
+            },
+            defaultPlot: {
+                text: {
+                    attrs: {
+                        fill: "#b4b4b4",
+                        "font-weight": "normal"
+                    },
+                    attrsHover: {
+                        fill: "#fff",
+                        "font-weight": "bold"
+                    }
                 }
             }
+            , zoom: {
+                enabled: true
+                , step: 0.25
+                , maxLevel: 20
+            }
+        },
+        legend: {
+            plot: {
+                display: true,
+                title: "Number of Events",
+                marginBottom: 6,
+                slices: [
+                    {
+                        type: "circle",
+                        max: 10,
+                        attrs: {
+                            fill: "#FD4851",
+                            "stroke-width": 1
+                        },
+                        attrsHover: {
+                            transform: "s1.5",
+                            "stroke-width": 1
+                        },
+                        label: "Less Than 10",
+                        size: 10
+                    },
+                    {
+                        type: "circle",
+                        min: 11,
+                        max: 19,
+                        attrs: {
+                            fill: "#FD4851",
+                            "stroke-width": 1
+                        },
+                        attrsHover: {
+                            transform: "s1.5",
+                            "stroke-width": 1
+                        },
+                        label: "Between 11 and 19",
+                        size: 20
+                    },
+                    {
+                        type: "circle",
+                        min: 100,
+                        attrs: {
+                            fill: "#FD4851",
+                            "stroke-width": 1
+                        },
+                        attrsHover: {
+                            transform: "s1.5",
+                            "stroke-width": 1
+                        },
+                        label: "More Than 20",
+                        size: 30
+                    }
+                ]
+            }
         }
-        , zoom: {
-            enabled: true
-            , step: 0.25
-            , maxLevel: 20
-        }
-    },
-    legend: {
-        plot: {
-          display: true,
-          title: "Number of Events",
-          marginBottom: 6,
-          slices: [
-              {
-                  type: "circle",
-                  max: 10,
-                  attrs: {
-                      fill: "#FD4851",
-                      "stroke-width": 1
-                  },
-                  attrsHover: {
-                      transform: "s1.5",
-                      "stroke-width": 1
-                  },
-                  label: "Less Than 10",
-                  size: 10
-              },
-              {
-                  type: "circle",
-                  min: 11,
-                  max: 19,
-                  attrs: {
-                      fill: "#FD4851",
-                      "stroke-width": 1
-                  },
-                  attrsHover: {
-                      transform: "s1.5",
-                      "stroke-width": 1
-                  },
-                  label: "Between 11 and 19",
-                  size: 20
-              },
-              {
-                  type: "circle",
-                  min: 100,
-                  attrs: {
-                      fill: "#FD4851",
-                      "stroke-width": 1
-                  },
-                  attrsHover: {
-                      transform: "s1.5",
-                      "stroke-width": 1
-                  },
-                  label: "More Than 20",
-                  size: 30
-              }
-          ]
-      }
-  }
+
+    });
+
+    $(".map").on('click', 'path', function () {
+        console.log("$(this).attr('data-id'): " + $(this).attr("data-id"));
+    });
 
 });
 
-  $('.map').on('click', 'path', function() {
-      console.log("$(this).attr('data-id'): " + $(this).attr("data-id"));
-  });
-
-});
 
 
-
-$("#submitBtn").on("click",function(event){
+$("#submitBtn").on("click", function (event) {
     event.preventDefault();
 
+    $("#Eventslist").hide();
+    function myFunction() {
+        var x = document.getElementById("snackbar");
+        x.className = "show";
+        setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    }
+    myFunction();
 
-    $(".box__left").text("");
-    $(".box__bottom").text("");
-    $(".box__top").text("");
-    $(".box__right").text("");
-    $(".front").empty();
+    setTimeout(function () {
+        $(".mapcontainer").trigger('update', [{
+            newPlots: displayPlots,
+            animDuration: 2000
+        }])
+    }
+        , 4000);
+   
+    Eventsearch();
 
-    //   Token for an Eventbrite api
-var Token = "E37FO4F4OMDF4ELNTCLM";
-var EventName = $("#searchEvents").val().trim();
-// console.log(EventName);
-// Here we are building the URL we need to query the database
-// AIzaSyA8cKuGcg8_ZyxrmARMBgXbx8gXKGKSans api key for an street view..
-// https://maps.googleapis.com/maps/api/streetview?size=400x400&location=40.720032,-73.988354&fov=90&heading=235&pitch=10&key=YOUR_API_KEY
-  
-setTimeout( function(){
-    $(".mapcontainer").trigger('update', [{
-        newPlots: displayPlots, 
-        animDuration: 2000
-      }])
-  }
-, 5000);
-
-
-var queryURL = "https://www.eventbriteapi.com/v3/events/search/?q="+ EventName +"&token="+ Token ; 
-
-$.ajax({
-  url: queryURL,
-  method: "GET"
-})
-
-
-// We store all of the retrieved data inside of an object called "response"
-  .then(function(response) {
-    // Log the resulting object
-    // console.log(response);
-
-    var arrEvents = response.events;
-
-console.log(arrEvents);
-
-for(var i = 0; i < arrEvents.length; i++)
-{
-  var eventbriteLocale = arrEvents[i].locale;
-  var countryCode = eventbriteLocale.slice(3, 5);
-  plots[countryCode].eventCount++;
-
-  if ( plots[countryCode].eventCount > 1){
-      displayPlots[countryCode] = plots[countryCode];
-  }
-
-  // console.log("Locale: " + arrEvents[i].locale + " Timezone (start): " + arrEvents[i].start.timezone);
-}
-console.log(displayPlots);
-console.log(plots)
-
-
-
-
-    var left = $("<div>");
-    var lh1 = $("<h1>");
-    lh1.text("Description of Event");
-    var lp = $("<p>")
-    lp.text(response.events[0].description.text);
-    left.append(lh1);
-    left.append(lp);
-
-    $(".box__left").append(left);
-
-    var bottom = $("<div>");
-    var bh1 = $("<h1>");
-    bh1.text("Buy Tickets From Here :");
-    var bp = $("<p>")
-    bp.html("<a href="+response.events[0].url+">"+response.events[0].url+"</a>");
-    bottom.append(bh1);
-    bottom.append(bp);
-
-    $(".box__bottom").append(bottom);
-
-    var top = $("<div>");
-    var th1 = $("<h1>");
-    th1.text("Event Poster");
-    var path = response.events[0].logo.url;
-    var img = $("<img>");
-    img.attr("src",path);
-    top.append(th1);
-    top.append(img);
-
-    $(".box__top").append(top);
-
-    var boxp = $("<p>");
-    boxp.text(response.events[0].name.text);
-    boxp.addClass("box_text_center");
-    $(".front").append(boxp);
     
-    $("#eventid").text(response.events[0].venue_id);
-    // console.log(response.events[0].venue_id);
-    r= response.events[0].venue_id;
-    eventvenue(r);
-      
-  
-  
-  
-  
-    function eventvenue(r) {
-      // alert("hi");
-  
-    var queryURLV =  "https://www.eventbriteapi.com/v3/venues/"+ r +"/?token=" + Token ;
-  
-  $.ajax({
-    url: queryURLV,
-    method: "GET"
-  })
-  
-  
-  // We store all of the retrieved data inside of an object called "response"
-    .then(function(response2) {
-  
-      
-  
-  //     // Log the resulting object
-    //   console.log(response2);
-  
-      var right = $("<div>");
-      var rh1 = $("<h1>");
-      rh1.text("Details of Event");
-      var rp = $("<p>")
-      var rp2 = $("<p>");
-      var rp3 = $("<p>");
-      rp.text("Address : "+ response2.address.localized_address_display);
-      rp2.text("city : " +response2.address.city);
-      rp3.text("Region : " + response2.address.region);
-      right.append(rh1);
-      right.append(rp);
-      right.append(rp2);
-      right.append(rp3);
-      
-  
-      $(".box__right").append(right);
-  
-  
-    });
-  }
-  });
-  
+    function Eventsearch(){
+    var Token = "E37FO4F4OMDF4ELNTCLM";
+    var EventName = $("#searchEvents").val().trim();
+    
+   
 
+    var queryURL = "https://www.eventbriteapi.com/v3/events/search/?q=" + EventName + "&token=" + Token;
+
+    $.ajax({
+        url: queryURL,
+        method: "GET"
+    })
+
+
+        .then(function (response) {
+            
+            var arrEvents = response.events;
+
+            console.log(arrEvents);
+
+            for (var i = 0; i < arrEvents.length; i++) {
+                var eventbriteLocale = arrEvents[i].locale;
+                var countryCode = eventbriteLocale.slice(3, 5);
+                plots[countryCode].eventCount++;
+
+                if (plots[countryCode].eventCount > 1) {
+                    displayPlots[countryCode] = plots[countryCode];
+                }
+
+            }
+            console.log(displayPlots);
+            console.log(plots)
+
+
+
+
+           
+
+            var lists = response.events;
+            for (i = 0; i < lists.length; i++) {
+                r = response.events[i].venue_id;
+                n = response.events[i].name.text;
+                u = response.events[i].url;
+                d = response.events[i].start.local;
+                desp= response.events[i].description.text;
+               
+                eventvenue(r,n,u,d,desp);
+
+
+
+
+                function eventvenue(r,n,u,d,desp,) {
+
+                    var queryURLV = "https://www.eventbriteapi.com/v3/venues/" + r + "/?token=" + Token;
+
+                    $.ajax({
+                        url: queryURLV,
+                        method: "GET"
+                    })
+
+
+                        .then(function (response2) {
+
+
+
+                            console.log(response2);
+                            
+                           
+
+
+                            $(document).on("click",".plot",function(){
+                                var country= $(this).attr("data-id");
+                                $("#Eventslist").show();
+                                $("#clearresult").show();
+                                eventvenue(r,n,u,d,desp);
+
+                                
+                                if(country === response2.address.country)
+                               {        
+                               
+                                
+                                var text1 = "<a href="+u+"> Click Here To Buy Tickets  </a>"
+                               
+                                $("#Eventslist > tbody").append("<tr><td>" + n + "</td><td>" + response2.address.address_1 + "</td><td id='min'>" +response2.address.city + "</td><td id='min'>" + text1 + "</td><td id='min'>" + d + "</td><td id='min'>"+response2.address.country+"</td></tr>");
+
+                                
+                                }
+                            })
+
+
+
+                        });
+                        
+                       
+                        
+                }
+            }
+        });
+
+
+    }
 });
 
 var r = document.getElementById('result');
 
-			$("#speechbtn").on("click",function (event) {
-       
-        event.preventDefault();
-				if('webkitSpeechRecognition' in window){
-					var speechRecognizer = new webkitSpeechRecognition();
-					speechRecognizer.continuous = true;
-					speechRecognizer.interimResults = true;
-					speechRecognizer.lang = 'en-IN';
-					speechRecognizer.start();
+$("#speechbtn").on("click", function (event) {
 
-					var finalTranscripts = '';
+    event.preventDefault();
+    if ('webkitSpeechRecognition' in window) {
+        var speechRecognizer = new webkitSpeechRecognition();
+        speechRecognizer.continuous = true;
+        speechRecognizer.interimResults = true;
+        speechRecognizer.lang = 'en-IN';
+        speechRecognizer.start();
 
-					speechRecognizer.onresult = function(event){
-						var interimTranscripts = '';
-						for(var i = event.resultIndex; i < event.results.length; i++){
-							var transcript = event.results[i][0].transcript;
-							transcript.replace("\n", "<br>");
-							if(event.results[i].isFinal){
-								finalTranscripts += transcript;
-							}else{
-								interimTranscripts += transcript;
-							}
-						}
-						r.innerHTML = finalTranscripts + '<span style="color:#999">' + interimTranscripts + '</span>';
+        var finalTranscripts = '';
+
+        speechRecognizer.onresult = function (event) {
+            var interimTranscripts = '';
+            for (var i = event.resultIndex; i < event.results.length; i++) {
+                var transcript = event.results[i][0].transcript;
+                transcript.replace("\n", "<br>");
+                if (event.results[i].isFinal) {
+                    finalTranscripts += transcript;
+                } else {
+                    interimTranscripts += transcript;
+                }
+            }
+            r.innerHTML = finalTranscripts + '<span style="color:#999">' + interimTranscripts + '</span>';
             $("#searchEvents").val(r.innerText);
-            // console.log(r.innerText);
-          };
-					speechRecognizer.onerror = function (event) {
-					};
-				}else{
-					r.innerHTML = 'Your browser is not supported. If google chrome, please upgrade!';
-				}
-			
-        
-        
-    });
+        };
+        speechRecognizer.onerror = function (event) {
+        };
+    } else {
+        r.innerHTML = 'Your browser is not supported. If google chrome, please upgrade!';
+    }
+
+
+
+});
+
+$("#clearresult").on("click",function(){
+                                        $('#Eventslist tbody').remove();
+
+})
+
 

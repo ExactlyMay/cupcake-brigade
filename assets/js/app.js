@@ -33,7 +33,34 @@ function login(){
 }
 
 function testAlert(user){
+
+    database.ref('users').push({
+        uid: user.uid,
+        userName: user.email,
+        displayName: user.displayName,
+        dateAdded: firebase.database.ServerValue.TIMESTAMP
+    });
+
     alert("Welcome, " + user.displayName + "!");
 
     console.log("hello " + user.displayName);
+
+    //Get the current userID
+    var userId = firebase.auth().currentUser.uid;
+    //Get the user data
+    return firebase.database().ref('/users/' + userId).once('value').then(function(snapshot) {
+        //Do something with your user data located in snapshot
+    });
+
+    firebase.database().ref('users').set({
+        UID: userId,
+        username: name,
+        email: email
+        //some more user data
+    });
+  
+    
 }
+    database.ref("search").on("child_added", function(snapshot) {
+        var childData = snapshot.val();
+    });

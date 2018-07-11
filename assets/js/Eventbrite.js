@@ -2177,7 +2177,7 @@ $(document).ready(function () {
             name: "world_countries",
             defaultArea: {
                 attrs: {
-                    fill: "#fff",
+                    fill: "gray",
                     stroke: "#232323",
                     "stroke-width": 0.3
                 }

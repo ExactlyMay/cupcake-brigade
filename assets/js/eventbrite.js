@@ -2255,7 +2255,7 @@ $(document).ready(function () {
 
     });
 
-    $(".map").on('click', 'path', function () {
+    $(".map").on('click', '.path', function () {
         console.log("$(this).attr('data-id'): " + $(this).attr("data-id"));
     });
 

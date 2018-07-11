@@ -208,7 +208,6 @@ a:hover {
 }
 .center {
 	text-align: center;
-	color: yellow;
 	background: gray;
 }
 .slider1 {
@@ -325,7 +324,7 @@ a:hover {
 
 .mapael .map {
 	position: relative;
-	background-color: #cddee0;
+	background-color: #17143b;
 	margin-bottom: 10px;
 }
 .mapael .mapTooltip {

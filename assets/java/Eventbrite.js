@@ -2170,8 +2170,7 @@ var displayPlots = {};
 $(document).ready(function () {
     $("#Eventslist").hide();
     $("#clearresult").hide();
-    // $(".mpavis").hide();
-    // Mapael initialisation    
+      
     $world = $(".container");
     $world.mapael({
         map: {
@@ -2266,14 +2265,14 @@ $(document).ready(function () {
 
 $("#submitBtn").on("click", function (event) {
     event.preventDefault();
-    // $("#Eventslist").show();
+
+    $("#Eventslist").hide();
     function myFunction() {
         var x = document.getElementById("snackbar");
         x.className = "show";
         setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
     }
     myFunction();
-    // $(".mpavis").show();
 
     setTimeout(function () {
         $(".mapcontainer").trigger('update', [{
@@ -2285,20 +2284,11 @@ $("#submitBtn").on("click", function (event) {
    
     Eventsearch();
 
-    // $(".box__left").text("");
-    // $(".box__bottom").text("");
-    // $(".box__top").text("");
-    // $(".box__right").text("");
-    // $(".front").empty();
+    
     function Eventsearch(){
-    //   Token for an Eventbrite api
     var Token = "E37FO4F4OMDF4ELNTCLM";
     var EventName = $("#searchEvents").val().trim();
-    // console.log(EventName);
-    // Here we are building the URL we need to query the database
-    // AIzaSyA8cKuGcg8_ZyxrmARMBgXbx8gXKGKSans api key for an street view..
-    // https://maps.googleapis.com/maps/api/streetview?size=400x400&location=40.720032,-73.988354&fov=90&heading=235&pitch=10&key=YOUR_API_KEY
-
+    
    
 
     var queryURL = "https://www.eventbriteapi.com/v3/events/search/?q=" + EventName + "&token=" + Token;
@@ -2309,11 +2299,8 @@ $("#submitBtn").on("click", function (event) {
     })
 
 
-        // We store all of the retrieved data inside of an object called "response"
         .then(function (response) {
-            // Log the resulting object
-            // console.log(response);
-
+            
             var arrEvents = response.events;
 
             console.log(arrEvents);
@@ -2327,7 +2314,6 @@ $("#submitBtn").on("click", function (event) {
                     displayPlots[countryCode] = plots[countryCode];
                 }
 
-                // console.log("Locale: " + arrEvents[i].locale + " Timezone (start): " + arrEvents[i].start.timezone);
             }
             console.log(displayPlots);
             console.log(plots)
@@ -2337,8 +2323,6 @@ $("#submitBtn").on("click", function (event) {
 
            
 
-            // $("#eventid").text(response.events[0].venue_id);
-            // console.log(response.events[0].venue_id);
             var lists = response.events;
             for (i = 0; i < lists.length; i++) {
                 r = response.events[i].venue_id;
@@ -2346,13 +2330,13 @@ $("#submitBtn").on("click", function (event) {
                 u = response.events[i].url;
                 d = response.events[i].start.local;
                 desp= response.events[i].description.text;
+               
                 eventvenue(r,n,u,d,desp);
 
 
 
 
-                function eventvenue(r,n,u,d,desp) {
-                    // alert("hi");
+                function eventvenue(r,n,u,d,desp,) {
 
                     var queryURLV = "https://www.eventbriteapi.com/v3/venues/" + r + "/?token=" + Token;
 
@@ -2362,30 +2346,13 @@ $("#submitBtn").on("click", function (event) {
                     })
 
 
-                        // We store all of the retrieved data inside of an object called "response"
                         .then(function (response2) {
 
 
 
-                            //     // Log the resulting object
                             console.log(response2);
                             
-                            // var right = $("<div>");
-                            // var rh1 = $("<h1>");
-                            // rh1.text("Details of Event");
-                            // var rp = $("<p>")
-                            // var rp2 = $("<p>");
-                            // var rp3 = $("<p>");
-                            // rp.text("Address : " + response2.address.localized_address_display);
-                            // rp2.text("city : " + response2.address.city);
-                            // rp3.text("Region : " + response2.address.region);
-                            // right.append(rh1);
-                            // right.append(rp);
-                            // right.append(rp2);
-                            // right.append(rp3);
-
-                            // var rnew = response2;
-                            // $(".box__right").append(right);
+                           
 
 
                             $(document).on("click",".plot",function(){
@@ -2393,43 +2360,18 @@ $("#submitBtn").on("click", function (event) {
                                 $("#Eventslist").show();
                                 $("#clearresult").show();
                                 eventvenue(r,n,u,d,desp);
-                                    // $("#Eventslist").empty();
+
+                                
                                 if(country === response2.address.country)
                                {        
-                                //    alert("hi");
-                                //    console.log(response2.events[i].address.country);
+                               
                                 
-                                // var listofevents= $("<div>");
-                                // listofevents.addClass("listevent");
-                                // var p1=$("<p>");
-                                // p1.text("Event Name : "+n);
-                                // p1.addClass("eventdt1");
-                                // listofevents.append(p1);    
-                                // $(".allevents").append(listofevents);
-                                // var p2=$("<p>");
-                                // p2.addClass("eventdt2")
-                                // p2.text("Event Address : "+response2.address.address_1);
-                                // listofevents.append(p2);
-                                // var p3=$("<p>");
-                                // p3.addClass("eventdt2")
-                                // p3.text("City : " +response2.address.city);
-                                // listofevents.append(p3);
-                                // var p4=$("<p>");
-                                // p4.addClass("eventdt2");
-                                // p4.html("<a href='"+u+"'>"+ "Click Here To Buy Tickets" +" </a>");
-                                // listofevents.append(p4); 
-                                // var p5=$("<p>");
-                                // p5.addClass("eventdt2");
-                                // p5.text("Starting Time Of Event : "+d);
-                                // listofevents.append(p5);
-
-                                // $("#allevents").append(listofevents);
-
                                 var text1 = "<a href="+u+"> Click Here To Buy Tickets  </a>"
                                
-                                $("#Eventslist > tbody").append("<tr><td>" + n + "</td><td>" + response2.address.address_1 + "</td><td id='min'>" +response2.address.city + "</td><td id='min'>" + text1 + "</td><td id='min'>" + d + "</td></tr>");
+                                $("#Eventslist > tbody").append("<tr><td>" + n + "</td><td>" + response2.address.address_1 + "</td><td id='min'>" +response2.address.city + "</td><td id='min'>" + text1 + "</td><td id='min'>" + d + "</td><td id='min'>"+response2.address.country+"</td></tr>");
 
-                            }
+                                
+                                }
                             })
 
 
@@ -2473,7 +2415,6 @@ $("#speechbtn").on("click", function (event) {
             }
             r.innerHTML = finalTranscripts + '<span style="color:#999">' + interimTranscripts + '</span>';
             $("#searchEvents").val(r.innerText);
-            // console.log(r.innerText);
         };
         speechRecognizer.onerror = function (event) {
         };
@@ -2491,52 +2432,3 @@ $("#clearresult").on("click",function(){
 })
 
 
-// var left = $("<div>");
-// var lh1 = $("<h1>");
-// lh1.text("Description of Event");
-// var lp = $("<p>")
-// lp.text(response.events[0].description.text);
-// left.append(lh1);
-// left.append(lp);
-
-// $(".box__left").append(left);
-
-// var right = $("<div>");
-// var rh1 = $("<h1>");
-// rh1.text("Details of Event");
-// var rp = $("<p>")
-// var rp2 = $("<p>");
-// rp.text("Date(Start time) :"+ response.events[0].start.local);
-// rp2.text("Timezone : " +response.events[0].start.timezone);
-// right.append(rh1);
-// right.append(rp);
-// right.append(rp2);
-
-
-// $(".box__right").append(right);
-
-// var bottom = $("<div>");
-// var bh1 = $("<h1>");
-// bh1.text("Buy Tickets From Here :");
-// var bp = $("<p>")
-// bp.text(response.events[0].url);
-// bottom.append(bh1);
-// bottom.append(bp);
-
-// $(".box__bottom").append(bottom);
-
-// var top = $("<div>");
-// var th1 = $("<h1>");
-// th1.text("Event Poster");
-// var path = response.events[0].logo.url;
-// var img = $("<img>");
-// img.attr("src",path);
-// top.append(th1);
-// top.append(img);
-
-// $(".box__top").append(top);
-
-// var boxp = $("<p>");
-// boxp.text(response.events[0].name.text);
-// boxp.addClass("box_text_center");
-// $(".box").append(boxp);

@@ -1,4 +1,7 @@
 
+
+
+
 var plots = {
     "AD": {
         "eventCount": 0,
@@ -2365,7 +2368,7 @@ $("#submitBtn").on("click", function (event) {
                                 
                                 var text1 = "<a href="+u+"> Click Here To Buy Tickets  </a>"
                                
-                                $("#Eventslist > tbody").prepend("<tr><td>" + n + "</td><td>" + response2.address.address_1 + "</td><td id='min'>" +response2.address.city + "</td><td id='min'>" + text1 + "</td><td id='min'>" + d + "</td><td id='min'>"+response2.address.country+"</td></tr>");
+                                $("#Eventslist > tbody").append("<tr><td>" + n + "</td><td>" + response2.address.address_1 + "</td><td id='min'>" +response2.address.city + "</td><td id='min'>" + text1 + "</td><td id='min'>" + d + "</td><td id='min'>"+response2.address.country+"</td></tr>");
 
                                 
                                 }
@@ -2419,20 +2422,13 @@ $("#speechbtn").on("click", function (event) {
         r.innerHTML = 'Your browser is not supported. If google chrome, please upgrade!';
     }
 
-    $("#submitBtn").on("click",function(){
-        speechRecognizer.stop();
-
-    })
 
 
 });
 
 $("#clearresult").on("click",function(){
-                                        $('#Eventslist tbody tr').remove();
-                                        $("#clearresult").hide();
-                                        $("#Eventslist").hide();
+                                        $('#Eventslist tbody').remove();
 
-
-});
+})
 
 

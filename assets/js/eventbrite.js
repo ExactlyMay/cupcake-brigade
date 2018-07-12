@@ -2167,6 +2167,92 @@ var plots = {
 
 var displayPlots = {};
 
+$(document).ready(function() {
+	$("#Eventslist").hide();
+	$("#clearresult").hide();
+	$world = $(".container");
+	$world.mapael({
+		map: {
+			name: "world_countries",
+			defaultArea: {
+				attrs: {
+					fill: "yellow",
+					stroke: "#232323",
+					"stroke-width": 0.3
+				}
+			},
+			defaultPlot: {
+				text: {
+					attrs: {
+						fill: "#b4b4b4",
+						"font-weight": "normal"
+					},
+					attrsHover: {
+						fill: "#fff",
+						"font-weight": "bold"
+					}
+				}
+			},
+			zoom: {
+				enabled: true,
+				step: 0.25,
+				maxLevel: 20
+			}
+		},
+		legend: {
+			plot: {
+				display: true,
+				title: "Number of Events",
+				marginBottom: 6,
+				slices: [{
+					type: "circle",
+					max: 10,
+					attrs: {
+						fill: "#FD4851",
+						"stroke-width": 1
+					},
+					attrsHover: {
+						transform: "s1.5",
+						"stroke-width": 1
+					},
+					label: "Less Than 10",
+					size: 10
+				}, {
+					type: "circle",
+					min: 11,
+					max: 19,
+					attrs: {
+						fill: "#FD4851",
+						"stroke-width": 1
+					},
+					attrsHover: {
+						transform: "s1.5",
+						"stroke-width": 1
+					},
+					label: "Between 11 and 19",
+					size: 20
+				}, {
+					type: "circle",
+					min: 100,
+					attrs: {
+						fill: "#FD4851",
+						"stroke-width": 1
+					},
+					attrsHover: {
+						transform: "s1.5",
+						"stroke-width": 1
+					},
+					label: "More Than 20",
+					size: 30
+				}]
+			}
+		}
+	});
+	$(".map").on('click', '.path', function() {
+		console.log("$(this).attr('data-id'): " + $(this).attr("data-id"));
+	});
+
+
 $(document).ready(function () {
     $("#Eventslist").hide();
     $("#clearresult").hide();

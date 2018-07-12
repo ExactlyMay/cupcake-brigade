@@ -31,6 +31,14 @@ function login() {
 function testAlert(user) {
 	console.log("hello " + user.displayName);
 }
+
+function userDetails(user) {
+	$("#loginBtn").hide();
+	$("#loginScreen").append("<p class='center'> Welcome, " + user.displayName + "!</p>");
+
+}
+
+
 // Get the modal
 var modal = document.getElementById('id01');
 
@@ -41,8 +49,3 @@ window.onclick = function(event) {
 	}
 }
 
-function userDetails(user) {
-	$("#loginBtn").hide();
-	$("#loginScreen").append("<p class='center'> Welcome, " + user.displayName + "!</p>");
-
-}

@@ -42,24 +42,20 @@ function userDetails(user) {
 }
 
 function addSearch(){
-    console.log("Snapshot: " + $("#searchEvents").val().trim())
+    var userId = firebase.auth().currentUser.uid;
+
+    var searchTerm = $( "#searchEvents" ).val().trim();
+    database.ref('search/' + userId).push({
+        searchTerm: searchTerm
+    });
 
     //Get the current userID
-    var userId = firebase.auth().currentUser.uid;
     //Get the user data
-    return firebase.database("search").ref(userId).once('value').then(function(snapshot) {
+    // return firebase.database("search").ref(userId).once('value').then(function(snapshot) {
         //Do something with your user data located in snapshot
-        database.ref("search").push({
-            searchTerms: $( "select#foo option:checked" ).val()
-        });
-    });
+        
+    // });
 
-    firebase.database().ref('users').set({
-        UID: userId,
-        username: name,
-        email: email
-        //some more user data
-    });
     
 }
 

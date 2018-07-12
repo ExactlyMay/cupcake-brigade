@@ -2434,8 +2434,5 @@ $("#clearresult").on("click",function(){
 
 
 });
-$("#cBtn").on("click",function(){
-        $(".searchTextbox").val("");
-});
 
 

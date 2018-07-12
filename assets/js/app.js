@@ -9,43 +9,56 @@ var config = {
 };
 firebase.initializeApp(config);
 var database = firebase.database();
+
 $(document).ready(function() {
 
 	function newLogin(user) {
 		if (user) {
 			userDetails(user);
 		} else {
-			$("#loginBtn").on('click', login);
+			$("#loginBtn").on('click', login(user));
 		}
 	}
-	firebase.auth().onAuthStateChanged(newLogin);
-
+    firebase.auth().onAuthStateChanged(newLogin);
+    
+    $("#submitBtn").on("click", addSearch);
 });
 
-function login() {
+function login(user) {
 	var provider = new firebase.auth.GoogleAuthProvider();
-	firebase.auth().signInWithRedirect(provider);
-}
-
-
-function testAlert(user) {
-	console.log("hello " + user.displayName);
+    firebase.auth().signInWithRedirect(provider);
+    
+    database.ref('users').push({
+        uid: user.uid,
+        userName: user.email,
+        displayName: user.displayName,
+        dateAdded: firebase.database.ServerValue.TIMESTAMP
+    });
 }
 
 function userDetails(user) {
 	$("#loginBtn").hide();
-	$("#loginScreen").append("<p class='center'> Welcome, " + user.displayName + "!</p>");
-
+    $("#loginScreen").append("<p class='center'> Welcome, " + user.displayName + "!</p>");
 }
 
+function addSearch(){
+    var userId = firebase.auth().currentUser.uid;
 
-// Get the modal
-var modal = document.getElementById('id01');
+    var searchTerm = $( "#searchEvents" ).val().trim();
+    database.ref('search/' + userId).push({
+        searchTerm: searchTerm
+    });
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-	}
+    //Get the current userID
+    //Get the user data
+    // return firebase.database("search").ref(userId).once('value').then(function(snapshot) {
+        //Do something with your user data located in snapshot
+        
+    // });
+
+    
 }
 
+database.ref("search").on("child_added", function(snapshot) {
+    var childData = snapshot.val();
+});

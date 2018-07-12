@@ -10,20 +10,23 @@ var config = {
 firebase.initializeApp(config);
 var database = firebase.database();
 $(document).ready(function() {
-	login();
-});
 
-function login() {
 	function newLogin(user) {
 		if (user) {
-			testAlert(user);
+			userDetails(user);
 		} else {
-			var provider = new firebase.auth.GoogleAuthProvider();
-			firebase.auth().signInWithRedirect(provider);
+			$("#loginBtn").on('click', login);
 		}
 	}
 	firebase.auth().onAuthStateChanged(newLogin);
+
+});
+
+function login() {
+	var provider = new firebase.auth.GoogleAuthProvider();
+	firebase.auth().signInWithRedirect(provider);
 }
+
 
 function testAlert(user) {
 	console.log("hello " + user.displayName);
@@ -36,4 +39,9 @@ window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
+
+function userDetails(user) {
+	$("#loginBtn").hide();
+	$("#loginScreen").append("Welcome, " + user.displayName + "! ");
+
 }

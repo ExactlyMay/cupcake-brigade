@@ -44,4 +44,4 @@ function userDetails(user) {
 	$("#loginBtn").hide();
 	$("#loginScreen").append("Welcome, " + user.displayName + "! ");
 
-}
+}}

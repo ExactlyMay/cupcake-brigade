@@ -2429,6 +2429,6 @@ $("#speechbtn").on("click", function (event) {
 $("#clearresult").on("click",function(){
                                         $('#Eventslist tbody').remove();
 
-});
+})
 
 

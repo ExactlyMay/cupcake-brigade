@@ -38,10 +38,11 @@ var modal = document.getElementById('id01');
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
-    }
+	}
+}
 
 function userDetails(user) {
 	$("#loginBtn").hide();
-	$("#loginScreen").append("Welcome, " + user.displayName + "! ");
+	$("#loginScreen").append("<p class='center'> Welcome, " + user.displayName + "!</p>");
 
 }

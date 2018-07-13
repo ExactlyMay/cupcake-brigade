@@ -1,3 +1,7 @@
+
+
+
+
 var plots = {
     "AD": {
         "eventCount": 0,
@@ -2252,7 +2256,7 @@ $(document).ready(function () {
     });
 
     $(".map").on('click', 'path', function () {
-        // console.log("$(this).attr('data-id'): " + $(this).attr("data-id"));
+        console.log("$(this).attr('data-id'): " + $(this).attr("data-id"));
     });
 
 });
@@ -2299,7 +2303,7 @@ $("#submitBtn").on("click", function (event) {
             
             var arrEvents = response.events;
 
-            // console.log(arrEvents);
+            console.log(arrEvents);
 
             for (var i = 0; i < arrEvents.length; i++) {
                 var eventbriteLocale = arrEvents[i].locale;
@@ -2311,8 +2315,8 @@ $("#submitBtn").on("click", function (event) {
                 }
 
             }
-            // console.log(displayPlots);
-            // console.log(plots)
+            console.log(displayPlots);
+            console.log(plots)
 
 
 
@@ -2346,7 +2350,7 @@ $("#submitBtn").on("click", function (event) {
 
 
 
-                            // console.log(response2);
+                            console.log(response2);
                             
                            
 
@@ -2364,7 +2368,7 @@ $("#submitBtn").on("click", function (event) {
                                 
                                 var text1 = "<a href="+u+"> Click Here To Buy Tickets  </a>"
                                
-                                $("#Eventslist > tbody").append("<tr><td>" + n + "</td><td>" + response2.address.address_1 + "</td><td id='min'>" +response2.address.city + "</td><td id='min'>" + text1 + "</td><td id='min'>" + d + "</td><td id='min'>"+response2.address.country+"</td></tr>");
+                                $("#Eventslist > tbody").prepend("<tr><td>" + n + "</td><td>" + response2.address.address_1 + "</td><td id='min'>" +response2.address.city + "</td><td id='min'>" + text1 + "</td><td id='min'>" + d + "</td><td id='min'>"+response2.address.country+"</td></tr>");
 
                                 
                                 }
@@ -2423,5 +2427,10 @@ $("#speechbtn").on("click", function (event) {
 });
 
 $("#clearresult").on("click",function(){
-    $('#Eventslist tbody').remove();
-});
+$('#Eventslist tbody tr').remove();
+$("#clearresult").hide();
+$("#Eventslist").hide();
+
+})
+
+
